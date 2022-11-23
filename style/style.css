@@ -2,3 +2,6 @@ header{
     background-image: url("/images/rivers.jpg");
     height:35vh;
 }
+.btn{
+    padding:50px ;
+}
