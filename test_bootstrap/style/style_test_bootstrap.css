@@ -1,0 +1,18 @@
+header{
+    /*background-image: url("/images/rivers.jpg");*/
+    /*height:35vh;*/
+    height:auto;
+}
+
+.btn{
+    padding-bottom:50px ;
+}
+
+.btn btn-tertiary{
+    padding:25px;
+}
+
+#carrousel_top{
+    height:5vh;
+    width:85vw;
+}

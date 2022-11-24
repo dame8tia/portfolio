@@ -1,7 +1,100 @@
-header{
-    background-image: url("/images/rivers.jpg");
-    height:35vh;
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+:root{
+    --font_nova_square : "Nova square";
+    --color_blue_elec : #09DBF8;
 }
-.btn{
-    padding:50px ;
+
+body{
+    border: green solid 2px;
+}
+
+.header_container{
+    height:100vh;
+    background-image: url("/images/nasa_saturn.jpg");
+    background-repeat:round;
+    /* background-size: cover; */
+}
+
+
+.repere{
+    border:red solid 2px;
+}
+.repere_row{
+    border:blue solid 5px;
+}
+.repere_container_tot{
+    border:rgb(19, 247, 106) solid 5px;
+}
+
+
+.font_custom_dev{
+    font-family: var(--font_nova_square);
+}
+.color_custom_01{
+    color:var(--color_blue_elec);
+}
+
+.navbar-toggler{
+    color:var(--color_blue_elec);
+    border-color: var(--color_blue_elec);
+}
+.nav-link{
+    color:var(--color_blue_elec);
+}
+.nav-link:hover{
+    color:rgb(248, 11, 192);
+}
+
+.nav-link .active{
+    color:var(--color_blue_elec);
+}
+
+
+.list-group-item{
+    color:var(--color_blue_elec);
+}
+
+.list-group-item:hover{
+    color:var(--color_blue_elec);
+    font-weight: 700;
+}
+
+
+/* ------ Main Debut --- */
+.avatar{
+    width:150px;
+    height:150px
+}
+
+
+/* ----------------------------------------------- */
+
+@media (min-width: 576px) and (max-width:950px){
+
+   .header_container{
+        height:60vh;
+    }
+
+    .header--bottom--list--skills{
+        font-size: 0.865rem;
+    }
+
+
+}
+
+@media(min-width: 950px){
+
+   .header_container{
+        height:60vh;
+    }
+
+    .header--name{
+        font-size: 1.6rem;
+    }
+
+    .header--bottom--list--skills{
+        font-size: 0.865rem;
+    }
+
+
 }
