@@ -1,14 +1,77 @@
 @import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+
 :root{
     --font_nova_square : "Nova square";
     --color_blue_elec : #09DBF8;
     --color_red_kuoni : #ff4d5a ;
     --color_blue_aeag : #4d64b3;
 }
+
+.font_custom_dev{
+    font-family: var(--font_nova_square);
+}
+.color_custom_01{
+    color:var(--color_blue_elec);
+}
+
+/* repere */
+.repere{
+    border:red solid 2px;
+}
+.repere_row{
+    border:blue solid 5px;
+}
+.repere_container_tot{
+    border:rgb(19, 247, 106) solid 5px;
+}
+
 .myClass_text-align-justify{
     text-align:justify;
 }
+.bcg_white-gris{
+    background-color: #d2cece; 
+}
+.bcg_blue{
+    background-color: #4d64b3;
+}
+/* .bcg_degrade{
+/*     background-image: linear-gradient(14deg, rgba(2,0,36,1), rgba(191,194,198,1));
+    background-image: linear-gradient(14deg, rgba(40,42,54,1), rgba(40,42,54,1));
+} */
 
+.container_border{
+    border:1px solid var(--color_blue_elec);
+}
+
+h1{
+    text-transform: uppercase;
+    width:fit-content;
+    position:relative;
+    color: #4d64b3;
+}
+
+h1::after{
+    content:'';
+    position:absolute;
+    bottom:-2px;
+    left:0px;
+    width:100%;
+    height:2px;
+    background-color:  #4d64b3 ; /* rgba(34,36,388,1); */
+}
+/*
+h1:hover::after{
+    content:'';
+    border: 2px solid rgba(34,36,388,0.15);
+    background-color: #ff4d5a;
+    
+    position:absolute;
+    bottom:-2px;
+    left:0px;
+} */
+
+
+/* ----------------- ----------------- */
 body{
     border: green solid 2px;
 }
@@ -22,30 +85,7 @@ header{
     min-height:100vh;
 }
 
-.soulign_left{
-    margin-bottom: 1.4rem;
-}
-.soulign_right{
-    margin-left: 54px;
-}
-
-.repere{
-    border:red solid 2px;
-}
-.repere_row{
-    border:blue solid 5px;
-}
-.repere_container_tot{
-    border:rgb(19, 247, 106) solid 5px;
-}
-
-.font_custom_dev{
-    font-family: var(--font_nova_square);
-}
-.color_custom_01{
-    color:var(--color_blue_elec);
-}
-
+/* Header Partie haute */
 .navbar-toggler{
     color:var(--color_blue_elec);
     border-color: var(--color_blue_elec);
@@ -56,19 +96,14 @@ header{
 .nav-link:hover{
     color:rgb(248, 11, 192);
 }
-
 .nav-link .active{
     color:var(--color_blue_elec);
 }
-
-
 
 /* Header Partie basse */
 .menu_deco{
     position:relative;
     display: block;
-/*     background-color: #fff;
-    border: red solid 1px; */
 }
 .menu_deco::before{
     display: block;
@@ -98,8 +133,6 @@ header{
     display:none;
 }
 
-
-
 /* .list-group-item{
     color:var(--color_blue_elec);
     /* transform: rotate(-15deg); 
@@ -122,6 +155,7 @@ header{
     width:50%;
 }
 
+
 .aboutMe__layus{
     border: 1px solid rgba(34,36,388,0.15);;
     padding: 5px;
@@ -140,19 +174,13 @@ header{
     padding: 5px;
     width:100%;
     height:100%;
+    z-index:-1;
 }
 
 /* -- Compétences --*/
-.bcg_skills{
-    /* background-color:#bfc2c6; */
-    background-color: linear-gradient(14deg, rgba(2,0,36,1) 0%, rgba(191,194,198,1) 100%);
-}
+
 
 /* -- Réalisations */
-.bcg_part_main{
-    background-color: #d2cece; /* #d2cece */
- 
-}
 .card_dim{
     width:18rem;
     height:24rem;
@@ -171,7 +199,6 @@ header{
 .card-body .btn-primary{
     width: fit-content;
 }
-
 .img__02{
     background-image: url("/images/nasa_saturn.jpg");
 }
@@ -181,17 +208,31 @@ header{
 
 /* expériences */
 .exp__backgr{
+    height:100%;
+    position:relative;
+}
+.exp__backgr::before{
+    content: "";
+    position: absolute;
+    height:100%;
+    width:100%;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
     background-image: url("/images/pascal-mauerhofer-BLOWia_UMD4-unsplash.jpg");
     background-size: cover;
+    opacity:0.5;
 }
+
 .exp__square__red,.exp__square__red__02{
+    position:relative;
     margin:5px;
     width:fit-content;
     height:fit-content;
     background-color: #ff4d5a;
     border-radius: 10px;
 }
-
 .exp__detail{
     position:relative;
     background-color: #d2cece;
@@ -201,7 +242,6 @@ header{
     padding:0.6rem;
     margin-left: 0.6rem;
 }
-
 .exp__detail::before{
     position:absolute;
     content:"";
@@ -219,7 +259,7 @@ header{
     border-bottom-left-radius: 20px;
     padding:0.6rem;
     margin-left: 0.6rem;
-}q
+}
 .exp__square__red__02::before{
     position:absolute;
     content:"";
@@ -229,6 +269,22 @@ header{
     left:-8px; 
     background-color: #fff;
 }
+
+/* --------- CONTACT ----------- */
+.encadre{
+    /* width:fit-content; */
+    height:auto;
+    background-color:rgba(199,199,199,0.8);
+    border-radius: 25px;
+    
+}
+
+
+/* --------- FOOTER -------------*/
+
+/* .background_footer{
+
+} */
 
 
 /* ----------------------------------------------- */
@@ -251,7 +307,6 @@ header{
     .menu_deco{
         display:none;
     }
-
 
     .aboutMe__photo{
         margin-top:-1.5rem;
