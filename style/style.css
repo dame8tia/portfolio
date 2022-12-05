@@ -7,6 +7,10 @@
     --color_blue_aeag : #4d64b3;
 }
 
+.lien{
+    color:white;
+}
+
 .font_custom_dev{
     font-family: var(--font_nova_square);
 }
@@ -206,8 +210,60 @@ header{
     background-image: url("/images/rivers.jpg");
 }
 
-/* expériences */
-.exp__backgr{
+/* Timeline */
+
+.timeline{
+    padding-bottom:20px;
+}
+
+.timeline-object {
+    display:flex;
+    align-items : flex-start;
+    justify-content: flex-start;
+    margin-top: 30px;
+    position:relative;
+}
+
+.timeline-content {
+    max-width:700px;
+    margin-left:3px;
+    position: relative;
+}
+
+.timeline-content::before{
+    content:'';
+    display: block;
+    position: absolute;
+    top:10px;
+    left:-16px;
+    width: 4px;
+    height:120%;
+    background-color: var(--color_blue_aeag);
+}
+
+.last::before{
+    height:95%;
+}
+
+.timeline-date {
+    min-width : 140px;
+}
+
+.timeline-status{
+    flex-shrink: 0;
+    height:23px;
+    width:23px;
+    border-radius: 50%;
+    background-color: var(--color_blue_aeag);
+}
+
+
+
+
+
+
+/* expériences 1er version pas top */
+/* .exp__backgr{
     height:100%;
     position:relative;
 }
@@ -268,13 +324,13 @@ header{
     top:0;
     left:-8px; 
     background-color: #fff;
-}
+} */
 
 /* --------- CONTACT ----------- */
 .encadre{
     /* width:fit-content; */
     height:auto;
-    background-color:rgba(199,199,199,0.8);
+    background-color:#4d64b3;
     border-radius: 25px;
     
 }
@@ -282,9 +338,42 @@ header{
 
 /* --------- FOOTER -------------*/
 
-/* .background_footer{
+.icon--contact {
+    display:flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
 
-} */
+.icon--contact li {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:53px;
+    width:53px;
+    margin-right:5px;
+    font-size: 1.8rem;
+    border-radius: 50px;
+    background: #dde1e7;
+    box-shadow:  6px 6px 5px #a4a7ab,
+             -6px -6px 5px #ffffff;
+}
+
+.icon--contact li:hover {
+    border-radius: 50px;
+    background: #dde1e7;
+    box-shadow: inset 6px 6px 5px #a4a7ab,
+                inset -6px -6px 5px #ffffff;
+}
+
+.icon--contact a {
+    text-align: center;
+}
+.icon--contact a i {
+    color:#4d64b3;
+}
+
+
 
 
 /* ----------------------------------------------- */

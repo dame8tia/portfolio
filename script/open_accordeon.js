@@ -1,6 +1,10 @@
-/* let classLienClicked = document.querySelectorAll('.lien');
-classLienClicked.addEventListener("click",console.log("Lien clicked")) ; */
-/* console.log(classLienClicked); */
+/* let liens = document.getElementsByClassName('lien');
+/* let liens = document.querySelectorAll(".lien");
+console.log(liens);
+
+for (lien of liens){
+    console.log(lien);
+} */
 
 
 
