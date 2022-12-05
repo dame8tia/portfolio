@@ -380,7 +380,7 @@
  -->
         <!-- Contact -->
         <!-- https://lesdocs.fr/envoi-du-contenu-dun-formulaire-vers-un-email/ -->
-        <section class="mb-3">
+        <section class="mt-5 mb-3">
             <div id="contact" class="container">
                 <div class="row justify-content-center">
                     <div class="col-8 encadre px-5 py-3 text-white">
@@ -407,8 +407,18 @@
                         </form>
                     </div>
                 </div>
-            </div>
+                <div class="d-flex justify-content-end mt-3">
+                    <span>L. TURQUOIS - </span><span id="date_folio"></span>
+                    <script>
+                        let date = new Date();
+                        let auj = date.getFullYear();
+                        console.log(auj) 
+                        let date_folio = document.getElementById("date_folio");
+                        date_folio.innerHTML = auj;                    
+                    </script>
+                </div>
 
+            </div>
         </section>
 
     </main>
