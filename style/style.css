@@ -65,16 +65,7 @@ h1::after{
     height:2px;
     background-color:  #4d64b3 ; /* rgba(34,36,388,1); */
 }
-/*
-h1:hover::after{
-    content:'';
-    border: 2px solid rgba(34,36,388,0.15);
-    background-color: #ff4d5a;
-    
-    position:absolute;
-    bottom:-2px;
-    left:0px;
-} */
+
 
 
 /* ----------------- ----------------- */
@@ -267,10 +258,6 @@ header{
     position:relative;
 }
 
-/* .timeline-object:hover{
-    animation-name : animate__backInleft;
-}  */
-
 .timeline-content {
     max-width:700px;
     margin-left:3px;
@@ -306,81 +293,12 @@ header{
 }
 
 
-
-
-
-
-/* expériences 1er version pas top */
-/* .exp__backgr{
-    height:100%;
-    position:relative;
-}
-.exp__backgr::before{
-    content: "";
-    position: absolute;
-    height:100%;
-    width:100%;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    background-image: url("/images/pascal-mauerhofer-BLOWia_UMD4-unsplash.jpg");
-    background-size: cover;
-    opacity:0.5;
-}
-
-.exp__square__red,.exp__square__red__02{
-    position:relative;
-    margin:5px;
-    width:fit-content;
-    height:fit-content;
-    background-color: #ff4d5a;
-    border-radius: 10px;
-}
-.exp__detail{
-    position:relative;
-    background-color: #d2cece;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    padding:0.6rem;
-    margin-left: 0.6rem;
-}
-.exp__detail::before{
-    position:absolute;
-    content:"";
-    width:5px;
-    height:100%;
-    top:0;
-    left:-8px;
-    background-color: #fff;
-}
-.exp__detail__02{
-    position:relative;
-    background-color: #d2cece;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    padding:0.6rem;
-    margin-left: 0.6rem;
-}
-.exp__square__red__02::before{
-    position:absolute;
-    content:"";
-    width:5px;
-    height:100%;
-    top:0;
-    left:-8px; 
-    background-color: #fff;
-} */
-
 /* --------- CONTACT ----------- */
 .encadre{
     /* width:fit-content; */
     height:auto;
     background-color:#4d64b3;
-    border-radius: 25px;
-    
+    border-radius: 25px;    
 }
 
 
