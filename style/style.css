@@ -385,10 +385,17 @@ header{
 
 
 /* --------- FOOTER -------------*/
-.logo_codi{
-    width:60px;
-    height:60px;
+.pb-custom {
+    padding-bottom:15px;
 }
+.logo_codi{
+    width:80px;
+    height:80px;
+}
+.logo_codi:hover{
+    transform : scale(3);
+}
+
 .icon--contact {
     display:flex;
     list-style: none;

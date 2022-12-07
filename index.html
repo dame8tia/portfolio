@@ -466,28 +466,26 @@
 
     <footer>
         <div class="container">
-            <div class="background_footer">
-                <div class="row">
-                    <div class="codi col-4 d-flex justify-content-start ps-7">
-                        <img class="logo_codi" src="images/codi.png" alt="Codi'n Camp">
-                    </div>
-                    <div class="col-4">
-                        <ul class = "icon--contact">
-                            <!-- icones récupérées sur https://icons.getbootstrap.com/#icons -->
-                            <li><a href="https://www.linkedin.com/in/laetitia-turquois-07130676" target="_blank"><i class="bi bi-linkedin"></i></a></li>
-                            <li><a href="https://github.com/dame8tia" target="_blank"><i class="bi bi-github "></i></a>  </li>
-                        </ul>            
-                    </div>
-                    <div class="col-4 d-flex justify-content-end mt-3 fs-custom">
-                        <span>L. TURQUOIS - </span><span id="date_folio"></span>
-                        <script>
-                            let date = new Date();
-                            let auj = date.getFullYear();
-                            console.log(auj) 
-                            let date_folio = document.getElementById("date_folio");
-                            date_folio.innerHTML = auj;                    
-                        </script>
-                    </div>
+            <div class="row pb-custom">
+                <div class="codi col-4 d-flex justify-content-start ps-7">
+                    <img class="logo_codi" src="images/codi.png" alt="Codi'n Camp">
+                </div>
+                <div class="col-4">
+                    <ul class = "icon--contact">
+                        <!-- icones récupérées sur https://icons.getbootstrap.com/#icons -->
+                        <li><a href="https://www.linkedin.com/in/laetitia-turquois-07130676" target="_blank"><i class="bi bi-linkedin"></i></a></li>
+                        <li><a href="https://github.com/dame8tia" target="_blank"><i class="bi bi-github "></i></a>  </li>
+                    </ul>            
+                </div>
+                <div class="col-4 d-flex justify-content-end mt-3 fs-custom">
+                    <span>L. TURQUOIS - </span><span id="date_folio"></span>
+                    <script>
+                        let date = new Date();
+                        let auj = date.getFullYear();
+                        console.log(auj) 
+                        let date_folio = document.getElementById("date_folio");
+                        date_folio.innerHTML = auj;                    
+                    </script>
                 </div>
             </div>
         </div>
