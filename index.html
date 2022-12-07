@@ -120,7 +120,7 @@
 
                 <div class="row aboutMe__content align-items-center justify-content-center"> <!-- Le texte -->
                     <div class="col-12 col-lg-6 d-flex flex-column align-items-center">
-                            <h3 class="font_custom_dev color_custom_01">Chef de projet SIG et DevWeb</h3>
+                            <h3 class="font_custom_dev color_custom_01 mt-3">Chef de projet SIG et DevWeb</h3>
                             <p class="fw-lighter lh-lg myClass_text-align-justify">
                                 Seconde vie professionnelle (12 ans en métrologie)
                                 <br>
@@ -198,7 +198,7 @@
                                 </h2>
                                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        <strong>La géomatique</strong> Combinaison du mot Géographie et Informatique <br>
+                                        <strong>La géomatique</strong> Combinaison de deux mots Géographie et Informatique <br>
                                         <p>La géomatique est un concept, méthodes, outils que l'on integre dans des thématiques métiers telles que l'environnement, l'agriculture, l'aménagement du territoire et propose aux gestionnaires, décideurs des solutions pour les aider dans leur prise de décision.
                                         </p>
                                         <br>
@@ -347,35 +347,35 @@
         <!-- Timeline -->
         <div class="container timeline">
             <h1>Experiences</h1> 
-            <div class="timeline-object animate__animated animate__backInLeft">
+            <div class="timeline-object animate__animated animate__backInLeft animate__slow">
                 <div class="timeline-date">09/2020 - 07/2021</div>
                 <div class="timeline-status"></div> <!-- le point -->
                 <div class="timeline-content">
                     <h3>Syndicat de rivière</h3>
-                    <span> <strong>Chef de projet SIG</strong> 
+                    <span class="myClass_text-align-justify"> <strong>Chef de projet SIG</strong> 
                         <br>
                         Conception et réalisation d’un outil de diagnostic des pressions sur les masses d’eau DCE
                     </span>
                 </div>
             </div>
-            <div class="timeline-object">
+            <div class="timeline-object animate__animated animate__backInLeft animate__slow">
                 <div class="timeline-date">04/2019 - 09/2020</div>
                 <div class="timeline-status"></div> <!-- le point -->
                 <div class="timeline-content">
                     <h3>UFBAG</h3>
-                    <span> <strong>Coordinatrice de bassin</strong> 
+                    <span class="myClass_text-align-justify"> <strong>Coordinatrice de bassin</strong> 
                         <br>
                         Animation du réseau des associations de protection des milieux aquatiques <br>
                         Mise en place d'un groupe de travail sur une structuration informatique des données des 18 associations du bassin Adour Garonne
                 </div> 
                     </span>
             </div>
-            <div class="timeline-object">
+            <div class="timeline-object animate__animated animate__backInLeft animate__slow">
                 <div class="timeline-date">04/2015 - 04/2019</div>
                 <div class="timeline-status last"></div> <!-- le point -->
                 <div class="timeline-content last">
                     <h3>Association de protection des milieux aquatiques de l'Aveyron</h3>
-                    <span> <strong>Chef de projet SIG</strong> 
+                    <span class="myClass_text-align-justify"> <strong>Chef de projet SIG</strong> 
                         <br>
                         Mise en place d'une architecture informatique pour la structuration, l'exploitation et la valorisation des données de l'association (température de l'eau, inventaires piscicoles et hydro-morphologie)
                     </span>
@@ -459,17 +459,6 @@
                         </form>
                     </div>
                 </div>
-                <div class="d-flex justify-content-end mt-3">
-                    <span>L. TURQUOIS - </span><span id="date_folio"></span>
-                    <script>
-                        let date = new Date();
-                        let auj = date.getFullYear();
-                        console.log(auj) 
-                        let date_folio = document.getElementById("date_folio");
-                        date_folio.innerHTML = auj;                    
-                    </script>
-                </div>
-
             </div>
         </section>
 
@@ -479,12 +468,25 @@
         <div class="container">
             <div class="background_footer">
                 <div class="row">
-                    <div class="col">
+                    <div class="codi col-4 d-flex justify-content-start ps-7">
+                        <img class="logo_codi" src="images/codi.png" alt="Codi'n Camp">
+                    </div>
+                    <div class="col-4">
                         <ul class = "icon--contact">
                             <!-- icones récupérées sur https://icons.getbootstrap.com/#icons -->
                             <li><a href="https://www.linkedin.com/in/laetitia-turquois-07130676" target="_blank"><i class="bi bi-linkedin"></i></a></li>
                             <li><a href="https://github.com/dame8tia" target="_blank"><i class="bi bi-github "></i></a>  </li>
                         </ul>            
+                    </div>
+                    <div class="col-4 d-flex justify-content-end mt-3 fs-custom">
+                        <span>L. TURQUOIS - </span><span id="date_folio"></span>
+                        <script>
+                            let date = new Date();
+                            let auj = date.getFullYear();
+                            console.log(auj) 
+                            let date_folio = document.getElementById("date_folio");
+                            date_folio.innerHTML = auj;                    
+                        </script>
                     </div>
                 </div>
             </div>

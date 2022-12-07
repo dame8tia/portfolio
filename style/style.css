@@ -30,7 +30,9 @@
 }
 
 .myClass_text-align-justify{
+    display:inline-block;
     text-align:justify;
+    text-justify: auto;
 }
 .bcg_white-gris{
     background-color: #d2cece; 
@@ -202,15 +204,18 @@ header{
 
 .carte{
     height:450px;
+    max-width:280px;
     position:relative;
     transition: transform 0.5s ease-in-out;
     transform-style: preserve-3d;
+    margin:0 auto;
 }
 .carte:hover{
     transform:rotateY(180deg)
 }
 
 .side{
+    height:100%;
     position:absolute;   
     backface-visibility: hidden; 
 }
@@ -270,6 +275,7 @@ header{
     max-width:700px;
     margin-left:3px;
     position: relative;
+    margin-top: -0.4rem;
 }
 
 .timeline-content::before{
@@ -379,7 +385,10 @@ header{
 
 
 /* --------- FOOTER -------------*/
-
+.logo_codi{
+    width:60px;
+    height:60px;
+}
 .icon--contact {
     display:flex;
     list-style: none;
@@ -416,7 +425,9 @@ header{
     color:#4d64b3;
 }
 
-
+.fs-custom{
+    font-size:0.8rem;
+}
 
 
 /* ----------------------------------------------- */
@@ -478,6 +489,11 @@ header{
 
     .aboutMe__photo{
         margin-top:-1.5rem;
+    }
+    .card_dim{
+        width:16rem;
+        height:24rem;
+        margin-top:1.5rem;
     }
 
 
