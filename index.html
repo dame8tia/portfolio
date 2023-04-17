@@ -8,6 +8,7 @@
     <title>Portfolio</title>
 
     <script src="script/open_accordeon.js"></script>
+    <script src="script/sendMail.js"></script>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"> <!-- https://icons.getbootstrap.com/#icons OU https://icons.getbootstrap.com/#install-->
@@ -356,22 +357,24 @@
             <div id="contact" class="container">
                 <div class="row justify-content-center">
                     <div class="col-8 encadre px-5 py-3 text-white">
+                        
                         <h2 class="text-uppercase text-center">Contactez-moi</h2>
-                        <form action="email.php" method="post">
+
+                        <form action="#" method="post" id="form" onsubmit="recuperation()">
 
                             <div class="mb-3">
                                 <label for="exampleFormControlInput1" class="form-label">Votre email</label>
-                                <input name="expediteur_name" type="email" class="form-control" id="id_mail" placeholder="name@example.com">
+                                <input name="expediteur_name" type="email" class="form-control" name="mail" placeholder="name@example.com">
                             </div>
 
                             <div class="mb-3">
                                 <label for="exampleFormControlInput2" class="form-label">Sujet</label>
-                                <input name="sujet_name" type="text" class="form-control" id="id_sujet">
+                                <input name="sujet_name" type="text" class="form-control" name="sujet" id="id_sujet">
                             </div>                            
 
                             <div class="mb-3">
                                 <label for="exampleFormControlTextarea1" class="form-label">Description</label>
-                                <textarea name="message_name" class="form-control" id="id_description" rows="3"></textarea>
+                                <textarea name="message_name" class="form-control" name="description" id="id_description" rows="3"></textarea>
                             </div>
 
                             <input class="text-center mb-3" type="submit" value="Envoyez">
