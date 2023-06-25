@@ -311,7 +311,7 @@ header{
     height:80px;
 }
 .logo_codi:hover{
-    transform : scale(3);
+    transform : scale(1.5);
 }
 
 .icon--contact {
@@ -357,7 +357,7 @@ header{
 
 /* ----------------------------------------------- */
 
-@media (min-width: 576px) and (max-width:950px){
+@media (min-width: 576px) and (max-width:992px){
 
    .header_container{
         min-height:60vh;
@@ -389,10 +389,10 @@ header{
 
 }
 
-@media(min-width: 950px){
+@media(min-width: 992px){
 
    .header_container{
-        min-height:60vh;
+        min-height:80vh;
     }
     .header--name{
         font-size: 1.6rem;
